@@ -1,10 +1,11 @@
 {
-    "name": "Lunha.DevKit.Editor",
-    "rootNamespace": "Lunha.DevKit",
-    "references": [],
-    "includePlatforms": [
-        "Editor"
+    "name": "Lunha.AvatarPicker.Runtime",
+    "references": [
+        "ImageCropper.Runtime",
+        "NativeGallery.Runtime",
+        "NativeCamera.Runtime"
     ],
+    "includePlatforms": [],
     "excludePlatforms": [],
     "allowUnsafeCode": false,
     "overrideReferences": false,

@@ -1,19 +1,23 @@
 {
-  "name": "com.lunha-dev-kit",
-  "version": "0.0.7",
-  "description": "C# extensions & utilities",
-  "displayName": "Lunha - Dev Kit",
+  "name": "com.lunha-avatar-picker",
+  "version": "0.0.1",
+  "description": "Pick & Crop image",
+  "displayName": "Lunha - Avatar Picker",
   "unity": "2019.4",
   "author": {
     "name": "Yurii Lunha",
     "email": "yurii.lunha.dev@gmail.com",
     "url": "https://www.linkedin.com/in/yurii-lunha/"
   },
-  "changelogUrl": "https://github.com/yurii-lunha/com.lunha.dev-kit",
-  "dependencies": {},
-  "documentationUrl": "https://github.com/yurii-lunha/com.lunha.dev-kit",
+  "changelogUrl": "https://github.com/yurii-lunha/com.lunha.avatar-picker",
+  "dependencies": {
+    "com.yasirkula.imagecropper": "1.0.7",
+    "com.yasirkula.nativegallery": "1.7.8",
+    "com.yasirkula.nativecamera": "1.4.2"
+  },
+  "documentationUrl": "https://github.com/yurii-lunha/com.lunha.avatar-picker",
   "hideInEditor": true,
-  "keywords": ["extensions"],
+  "keywords": ["avatar, image, player, tool"],
   "license": "MIT",
   "licensesUrl": "https://mit-license.org/",
   "unityRelease": "40f1"

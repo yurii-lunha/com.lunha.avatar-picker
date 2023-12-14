@@ -1,3 +1,3 @@
 using System.Runtime.CompilerServices;
 
-[assembly: InternalsVisibleTo("Lunha.DevKit.RuntimeTests")]
+[assembly: InternalsVisibleTo("Lunha.AvatarPicker.RuntimeTests")]
