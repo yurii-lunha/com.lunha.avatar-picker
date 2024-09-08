@@ -33,5 +33,16 @@ namespace Lunha.AvatarPicker
                 onComplete.Invoke(texture);
             }, maxSize);
         }
+
+        public static bool HasPermission()
+        {
+            return NativeCamera.CheckPermission(true) == NativeCamera.Permission.Granted;
+        }
+
+        public static void RequestPermission(Action<bool> onComplete)
+        {
+            bool permissionGranted = NativeCamera.RequestPermission(true) == NativeCamera.Permission.Granted;
+            onComplete.Invoke(permissionGranted);
+        }
     }
 }

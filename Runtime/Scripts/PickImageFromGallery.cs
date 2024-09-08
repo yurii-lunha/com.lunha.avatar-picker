@@ -30,5 +30,24 @@ namespace Lunha.AvatarPicker
                 onComplete.Invoke(texture);
             });
         }
+
+        public static bool HasPermission()
+        {
+            var permission = NativeGallery.CheckPermission(NativeGallery.PermissionType.Read,
+                NativeGallery.MediaType.Image);
+
+            return permission == NativeGallery.Permission.Granted;
+        }
+
+        public static void RequestPermission(Action<bool> onComplete)
+        {
+            var permission = NativeGallery.RequestPermission(
+                NativeGallery.PermissionType.Read,
+                NativeGallery.MediaType.Image
+            );
+
+            bool permissionGranted = permission == NativeGallery.Permission.Granted;
+            onComplete.Invoke(permissionGranted);
+        }
     }
 }
